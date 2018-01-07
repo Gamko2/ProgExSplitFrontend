@@ -1,3 +1,8 @@
-<app-searchbar [callback] = "loadAppartements"></app-searchbar>
-
-
+<div class="search-view">
+    <div class="searchview-element">
+        <app-searchbar [callback]="loadAppartements"></app-searchbar>
+    </div>
+    <div class="searchview-element">
+        <app-searchresult [appartements]="appartements"></app-searchresult>
+    </div>
+</div>

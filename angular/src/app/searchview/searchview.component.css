@@ -1,0 +1,9 @@
+.searchbar-container{
+    width: 100%;
+}
+
+.searchview-element{
+    margin-left: auto;
+    margin-right:auto;
+    width: 40%;
+}

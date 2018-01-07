@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SearchviewComponent } from './searchview/searchview.component';
 import { SearchbarComponent } from './searchview/searchbar/searchbar.component';
+import { SearchresultComponent } from './searchview/searchresult/searchresult.component';
 
 
 
@@ -15,7 +16,8 @@ import { SearchbarComponent } from './searchview/searchbar/searchbar.component';
   declarations: [
     AppComponent,
     SearchviewComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    SearchresultComponent
   ],
   imports: [
     BrowserModule,

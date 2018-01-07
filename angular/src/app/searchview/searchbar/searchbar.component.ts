@@ -13,13 +13,13 @@ export class SearchbarComponent implements OnInit {
 
   ngOnInit() {
   }
+  ort: String = "";
+  searchwords: String = "";
+  @Input() callback: Function;
 
-  searchwords : String;
-  @Input() callback : Function;
-
-  test(){
+  test() {
     console.log("Test succeeded")
   }
-  
+
 
 }

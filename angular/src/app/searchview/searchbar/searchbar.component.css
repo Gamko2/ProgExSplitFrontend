@@ -1,0 +1,49 @@
+.search-bar{
+
+ 
+}
+
+.input{
+        background-repeat: repeat-x;
+        height: 25px;
+        border: 0px;
+        color: #fff;
+        margin-top: 3px;
+        border: 1px solid #000;
+        background-color: #FFFFCC;
+        
+        
+}
+
+.button{
+    
+        height: 29px;
+        width: 381px;
+        border: 0px;
+        background-color: grey;
+        color: #fff;
+        margin-top: 3px;
+        
+}
+
+.h1 {
+    color:#FF9F00;   /* Farbe orange */
+    font-size:28pt;  /* Größe 28pt   */
+    font-family:arial, "lucida console", sans-serif; /* Schriftart */
+  }
+
+.outer-search-bar{
+}
+
+.search{
+    
+   
+    
+}
+
+.outer-box{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { AppartementService } from '../services/appartement.service';
+import {Http, Response} from "@angular/http";
+import { Appartement } from '../appartement';
 
 @Component({
   selector: 'app-searchview',
@@ -10,16 +12,22 @@ export class SearchviewComponent implements OnInit {
 
   constructor(private appartementService : AppartementService) { }
 
-  appartements = {}
+  
+  appartements : Appartement[];
+  
 
 
 
   ngOnInit() {
   }
 
-  public loadAppartements = (searchword : String) => {
+  public loadAppartements = (searchword : String, ort : String) => {
     console.log("Load Appartements called");
-    this.appartementService.searchAppartement(searchword).subscribe((searchResult) => { console.log(searchResult) });
+    this.appartementService.searchAppartement(searchword,ort).subscribe((searchResult) =>{
+      console.log(searchResult);
+     this.appartements = JSON.parse(searchResult["_body"]);
+    });
+  
   }
 
   
