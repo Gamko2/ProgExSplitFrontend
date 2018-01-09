@@ -11,6 +11,7 @@ import { SearchresultComponent } from './searchview/searchresult/searchresult.co
 import { AppartementdetailComponent } from './searchview/searchresult/appartementdetail/appartementdetail.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RegisterComponent } from './users/register/register.component';
 
 
 
@@ -22,13 +23,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SearchbarComponent,
     SearchresultComponent,
     AppartementdetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule,
   ],
   providers: [AppartementService],
   bootstrap: [AppComponent]
