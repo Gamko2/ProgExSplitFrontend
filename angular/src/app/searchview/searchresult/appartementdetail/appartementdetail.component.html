@@ -1,0 +1,14 @@
+<div class=search-entry *ngFor="let appartement of appartements">
+    
+    
+    
+      <h1 class="h1"> {{appartement.objecttype}}</h1>
+      <div class="center">
+        <p> {{appartement.rooms}} Zimmer</p>
+        <p> {{appartement.squaremeter}} m²</p>
+        <p> {{appartement.price}}€</p>
+        <p> Extras:{{appartement.extra}}</p>
+        <p> {{appartement.plz}} {{appartement.ort}}</p>
+      </div>
+    
+    </div>

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 import { Appartement } from '../../appartement';
+import { Router } from '@angular/router';
+import { ROUTES } from '@angular/router';
 
 @Component({
   selector: 'app-searchresult',
@@ -9,10 +11,19 @@ import { Appartement } from '../../appartement';
 })
 export class SearchresultComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
+
+routing(appartement : Appartement){
+this.router.navigate(['/detail/' + appartement.id]);
+}
+
 
   ngOnInit() {
   }
+
+  selectedAppartement : Appartement;
+
+  
 
   @Input() appartements : Appartement[];
 }

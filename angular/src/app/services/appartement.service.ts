@@ -22,4 +22,12 @@ export class AppartementService {
     return this.http.get(url);
   }
 
+  searchbyID(id : number){
+    let url = "http://localhost:8081/appartement?";
+    console.log ("ID Service aufgerufen");
+    console.log (id);
+    url = url +"id=" +id;
+    return this.http.get(url);
+  }
+
 }
