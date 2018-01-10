@@ -1,0 +1,30 @@
+
+
+
+
+
+.search-entry{
+    background-color:gainsboro;
+}
+
+.h1{
+    
+    text-align: center;
+    color:gold;
+    font-size:40px;
+    font-weight:bold;
+    font-family: Verdana;
+    margin-bottom: 40px;
+}
+
+.center{
+    font-family: Verdana;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer{
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+}

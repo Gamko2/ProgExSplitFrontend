@@ -1,17 +1,18 @@
 .search-entry{
-background-color: #66CDAA;
+background-color: gainsboro;
 
 }
 
 .h1 {
-    color:#FF9F00;   /* Farbe orange */
-    font-size:28pt;  /* Größe 28pt   */
-    font-family:arial, "lucida console", sans-serif; /* Schriftart */
+    color:gold; 
+    font-size:22pt;  
+    font-family:Verdana;
     text-align: center;
   }
 
   .center{
-      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
   }
 
   .selected {

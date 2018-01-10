@@ -5,10 +5,12 @@
 
 .input{
         background-repeat: repeat-x;
-        height: 25px;
+        font-family: Verdana;
+        height: 26px;
+        width: 370px;
         border: 0px;
         color: rgba(15, 11, 34, 0.925);
-        margin-top: 3px;
+        margin-top: 4px;
         border: 1px solid #000;
         background-color: #FFFFCC;
         
@@ -17,19 +19,21 @@
 
 .button{
     
-        height: 29px;
-        width: 381px;
+        height: 28px;
+        width: 372px;
         border: 0px;
+        font-family: Verdana;
+        font-weight: bold;
         background-color: grey;
         color: #fff;
-        margin-top: 3px;
+        margin-top: 16px;
         
 }
 
 .h1 {
-    color:#FF9F00;   /* Farbe orange */
-    font-size:28pt;  /* Größe 28pt   */
-    font-family:arial, "lucida console", sans-serif; /* Schriftart */
+    color: gold;   
+    font-size:30pt;  
+    font-family:Verdana;
   }
 
 .outer-search-bar{
