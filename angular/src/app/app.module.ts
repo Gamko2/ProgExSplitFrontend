@@ -12,6 +12,7 @@ import { AppartementdetailComponent } from './searchview/searchresult/appartemen
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './users/register/register.component';
+import { MessageboxComponent } from './messagebox/messagebox/messagebox.component';
 
 
 
@@ -24,7 +25,8 @@ import { RegisterComponent } from './users/register/register.component';
     SearchresultComponent,
     AppartementdetailComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    MessageboxComponent
   ],
   imports: [
     BrowserModule,

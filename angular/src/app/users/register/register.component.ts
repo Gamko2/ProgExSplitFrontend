@@ -18,14 +18,20 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
   }
-  email: string ;
+  email: string;
   password: string;
-  username: string ;
+  username: string;
+  message: String="";
+  code : String;
+  mymessages : String[];
+  responsemessage : String="";
+  responsetype : String="";
 
+  
 
 
   register(username: string, password: string, email: string) {
-    console.log(email,password,username);
+    console.log(email, password, username);
     let url = "http://localhost:8081/register";
     const body = {
       username: username,
@@ -33,9 +39,27 @@ export class RegisterComponent implements OnInit {
       email: email
     }
     console.log(body);
-    this.http.post(url, body).subscribe()
-      
+    this.http.post(url, body).subscribe((searchResult) => {
+      console.log(searchResult);
+      let tmp = JSON.parse(searchResult["_body"])
+      if (tmp.code===200)
+      {
+        this.responsetype="success";
+      }
+      else {
+        this.responsetype="error";
+      }
+      if (tmp.success){
+        this.responsemessage=tmp.success;
+      }
+      else {
+        this.responsemessage=tmp.failed;
+      }
+
+    });
+
+    
+
+
   }
-
-
 }
