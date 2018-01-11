@@ -1,26 +1,36 @@
-.search-bar{
 
- 
+.h1 {
+        color: gold;   
+        font-size:20pt;  
+        font-family:Verdana;
+        padding-top: 10px;
+        padding-bottom: 30px;
+      }
+
+.search-bar{
+        background-color: #fff;
+        padding-bottom: 16px;
+        font-family:Verdana;
+        text-align: center;
 }
 
 .input{
         background-repeat: repeat-x;
         font-family: Verdana;
-        height: 26px;
-        width: 370px;
+        height: 30px;
+        width: 400px;
         border: 0px;
         color: rgba(15, 11, 34, 0.925);
         margin-top: 4px;
         border: 1px solid #000;
-        background-color: #FFFFCC;
-        
+        background-color: rgb(255, 255, 227);
         
 }
 
 .button{
     
         height: 28px;
-        width: 372px;
+        width: 200px;
         border: 0px;
         font-family: Verdana;
         font-weight: bold;
@@ -30,18 +40,14 @@
         
 }
 
-.h1 {
-    color: gold;   
-    font-size:30pt;  
-    font-family:Verdana;
-  }
-
 .outer-search-bar{
+
+        
 }
 
 .search{
     
-   
+        
     
 }
 
