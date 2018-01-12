@@ -13,6 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './users/register/register.component';
 import { MessageboxComponent } from './messagebox/messagebox/messagebox.component';
+import { LoginComponent } from './users/login/login.component';
+import { UserService } from './services/user.service';
+import { UploadappartementComponent } from './Uploadview/uploadappartement/uploadappartement.component';
+
 
 
 
@@ -26,7 +30,10 @@ import { MessageboxComponent } from './messagebox/messagebox/messagebox.componen
     AppartementdetailComponent,
     DashboardComponent,
     RegisterComponent,
-    MessageboxComponent
+    MessageboxComponent,
+    LoginComponent,
+    UploadappartementComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,7 @@ import { MessageboxComponent } from './messagebox/messagebox/messagebox.componen
     AppRoutingModule,
     HttpModule,
   ],
-  providers: [AppartementService],
+  providers: [AppartementService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

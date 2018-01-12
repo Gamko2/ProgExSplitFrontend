@@ -30,4 +30,21 @@ export class AppartementService {
     return this.http.get(url);
   }
 
+  uploadAppartement(objecttype: String, rooms: Number, squaremeter : Number, price : Number, extra : String, 
+  plz: Number, Ort : String, contact : Object ){
+    let url ="http://localhost:8081/postappartement" 
+    let body = {
+      "objecttype" : objecttype,
+      "rooms" : rooms,
+      "squaremeter" : squaremeter,
+      "price" : price,
+      "extra" : extra,
+      "plz" : plz,
+      "ort" : Ort,
+      "contact" : Object,
+    }
+    return this.http.post(url,body,{withCredentials: true});
+
+  }
+
 }

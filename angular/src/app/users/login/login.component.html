@@ -1,0 +1,13 @@
+<div class="search-bar">
+  <input class="input" id="username" type="text" size=50 placeholder="Enter Username " [(ngModel)]="username">
+</div>
+<div class="search-bar">
+  <input class="input" id="password" size=50 type="text" placeholder="Enter Password" [(ngModel)]="password">
+</div>
+
+<div class="search">
+  <button class="button" (click)="login(username,password)">Login</button>
+</div>
+
+<app-messagebox [message]="responsemessage" [type]="responsetype">
+</app-messagebox>

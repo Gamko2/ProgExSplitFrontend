@@ -1,0 +1,29 @@
+<div class="search-bar">
+  <input class="input" id="objectname" type="text" size=50 placeholder="Enter Objectname " [(ngModel)]="objecttype">
+</div>
+<div class="search-bar">
+  <input class="input" id="rooms" size=50 type="text" placeholder="Enter the number of rooms" [(ngModel)]="rooms">
+</div>
+<div class="search-bar">
+  <input class="input" id="squaremeter" size=50 type="text" placeholder="Enter the squaremter" [(ngModel)]="squaremeter">
+</div>
+<div class="search-bar">
+  <input class="input" id="price" size=50 type="text" placeholder="Enter your monthly price" [(ngModel)]="price">
+</div>
+<div class="search-bar">
+  <input class="input" id="extra" size=50 type="text" placeholder="Enter any extra for the appartement" [(ngModel)]="extra">
+</div>
+<div class="search-bar">
+  <input class="input" id="plz" size=50 type="text" placeholder="Enter the PLZ" [(ngModel)]="plz">
+</div>
+<div class="search-bar">
+  <input class="input" id="ort" size=50 type="text" placeholder="Enter place of your appartement" [(ngModel)]="ort">
+</div>
+
+
+<div class="search">
+  <button class="button" (click)="uploadAppartements()">Upload Appartement</button>
+</div>
+
+<app-messagebox [message]="responsemessage" [type]="responsetype">
+</app-messagebox>

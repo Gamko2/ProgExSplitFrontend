@@ -6,6 +6,8 @@ import { SearchviewComponent } from './searchview/searchview.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppartementdetailComponent } from './searchview/searchresult/appartementdetail/appartementdetail.component';
 import { RegisterComponent } from './users/register/register.component';
+import { LoginComponent } from './users/login/login.component';
+import { UploadappartementComponent } from './Uploadview/uploadappartement/uploadappartement.component';
 
 
 const routes: Routes = [
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path: 'search', component : SearchviewComponent},
   { path: 'dashboard', component: DashboardComponent },
   {path: 'detail/:id', component: AppartementdetailComponent},
-  {path: 'register', component : RegisterComponent}
+  {path: 'register', component : RegisterComponent},
+  {path: 'login', component : LoginComponent},
+  {path: 'upload', component: UploadappartementComponent}
 ]
 
 @NgModule({
