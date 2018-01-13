@@ -4,6 +4,6 @@
     <a *ngIf="global.authenticatedUser === undefined" routerLink="/login">Login</a>
     <a *ngIf="global.authenticatedUser === undefined" routerLink="/register">Register</a>
     <a *ngIf="global.authenticatedUser !== undefined" (click)="logout()">Logout ({{global.authenticatedUser.username}})</a>
-    <a *ngIf="global.authenticatedUser !== undefined" routerLink="/upload">Upload Appartement</a>
+    <a *ngIf="global.authenticatedUser !== undefined" routerLink="/upload">Upload real-estate</a>
 </nav>
 <router-outlet></router-outlet>
