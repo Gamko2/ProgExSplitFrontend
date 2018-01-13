@@ -27,7 +27,7 @@ export class AppartementdetailComponent implements OnInit {
 
   getAppartement() : void {
     const id = +this.route.snapshot.paramMap.get("id");
-    this.appartementService.searchbyID(id).subscribe((searchResult) =>{
+    this.appartementService.searchwithjoin(id).subscribe((searchResult) =>{
       console.log(searchResult);
      this.appartements = JSON.parse(searchResult["_body"]);
      console.log(this.appartements);
