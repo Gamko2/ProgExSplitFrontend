@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { AppartementService } from '../services/appartement.service';
 import {Http, Response} from "@angular/http";
 import { Appartement } from '../appartement';
+import { Globals } from '../globalvariables';
+
 
 @Component({
   selector: 'app-searchview',
@@ -10,6 +12,7 @@ import { Appartement } from '../appartement';
 })
 export class SearchviewComponent implements OnInit {
 
+  public global = Globals;
   constructor(private appartementService : AppartementService) { }
 
   

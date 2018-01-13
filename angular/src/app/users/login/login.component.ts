@@ -15,7 +15,7 @@ import { UserService } from '../../services/user.service';
 })
 export class LoginComponent implements OnInit {
 
-
+  public global = Globals;
   constructor( @Inject(Http) private http: Http, private router: Router, private userService: UserService) {
   }
 

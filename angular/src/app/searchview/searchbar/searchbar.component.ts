@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { AppartementService } from '../../services/appartement.service';
+import { Globals } from "../.././globalvariables";
 
 @Component({
   selector: 'app-searchbar',

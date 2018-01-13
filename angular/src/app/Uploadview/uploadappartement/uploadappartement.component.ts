@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppartementService } from '../../services/appartement.service';
 import { Router } from '@angular/router/';
+import { Globals } from "../.././globalvariables";
 
 @Component({
   selector: 'app-uploadappartement',

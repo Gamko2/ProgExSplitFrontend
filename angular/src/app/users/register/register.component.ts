@@ -6,6 +6,8 @@ import { HttpParams } from "@angular/common/http";
 import { HttpHeaders } from "@angular/common/http";
 import { httpFactory } from '@angular/http/src/http_module';
 import { Http } from '@angular/http';
+import { Globals } from "../.././globalvariables";
+
 
 @Component({
   selector: 'app-register',
@@ -13,8 +15,11 @@ import { Http } from '@angular/http';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
-  constructor( @Inject(Http) private http: Http) { }
+  
+  public global = Globals;
+  constructor( @Inject(Http) private http: Http) {
+    
+   }
 
   ngOnInit() {
   }
