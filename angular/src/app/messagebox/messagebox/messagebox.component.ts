@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core'; 
+import { Globals } from "../.././globalvariables";
  
 @Component({ 
   selector: 'app-messagebox', 
@@ -7,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 }) 
 export class MessageboxComponent implements OnInit { 
  
+  public global = Globals;
   constructor() { } 
  
    

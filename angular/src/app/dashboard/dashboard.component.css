@@ -31,8 +31,8 @@ li a:hover {
 
 .header {
     background-color:gainsboro;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 50px;
     text-align: center;
     color:gold;
     font-size:20px;
@@ -55,6 +55,7 @@ li a:hover {
 
 /* right column  */
 .column.right {
+    background-image: url("https://www.rensch-haus.com/fileadmin/_processed_/csm_kundenhaus_santorin_1150x600px_966e440284.jpg");
     width: 80%;
 }
 
@@ -68,8 +69,8 @@ li a:hover {
 /* Style the footer */
 .footer {
     background-color: gainsboro;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     text-align: center;
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
