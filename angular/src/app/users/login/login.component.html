@@ -1,20 +1,15 @@
 
-<div class="topnav">
-    <a routerLink="/dashboard">Home</a>
-    <a routerLink="/search">Search</a>
-    <a *ngIf="global.authenticatedUser === undefined" routerLink="/login">Login</a>
-    <a *ngIf="global.authenticatedUser === undefined" routerLink="/register">Register</a>
-    <a *ngIf="global.authenticatedUser !== undefined" (click)="logout()">Logout ({{global.authenticatedUser.username}})</a>
-    <a *ngIf="global.authenticatedUser !== undefined" routerLink="/upload">Upload real-estate</a>
-</div>
+
 
 <div class=outer-box>
   <h1 class="h1">Login </h1>
 
  <div class="search-bar">
+        <p style="text-align: center; font-family:Verdana; font-size:14px;">Username:</p>
 <input class="input" id="username" type="text" size=50 placeholder="Enter Username " [(ngModel)]="username">
 </div>
 <div class="search-bar">
+        <p style="text-align: center; font-family:Verdana; font-size:14px;">Password:</p>
 <input class="input" id="password" size=50 type="text" placeholder="Enter Password" [(ngModel)]="password">
 </div>
 

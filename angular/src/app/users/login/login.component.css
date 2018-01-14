@@ -26,7 +26,7 @@
 }
 
 .h1{
-    color: gold;   
+    color: #167AC6;   
     font-size:20pt;  
     font-family:Verdana;
     text-align: center;
@@ -42,8 +42,9 @@
 }
 
 .search{
-   padding-left: 540px; 
-   padding-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align : center;
 }
 
 .button{

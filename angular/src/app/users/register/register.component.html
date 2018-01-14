@@ -1,33 +1,26 @@
 
-<div class="topnav">
-        <a routerLink="/dashboard">Home</a>
-        <a routerLink="/search">Search</a>
-        <a *ngIf="global.authenticatedUser === undefined" routerLink="/login">Login</a>
-        <a *ngIf="global.authenticatedUser === undefined" routerLink="/register">Register</a>
-        <a *ngIf="global.authenticatedUser !== undefined" (click)="logout()">Logout ({{global.authenticatedUser.username}})</a>
-        <a *ngIf="global.authenticatedUser !== undefined" routerLink="/upload">Upload real-estate</a>
-    </div>
+
 
 <div class=outer-box>
     <h1 class="h1">Register </h1>
 
     <div class="outer-search-bar">
-         <p style="text-indent: 450px; font-family:Verdana; font-size:14px;">Enter a user name:</p>
+         <p style="text-align: center; font-family:Verdana; font-size:14px;">Username:</p>
         <div class="search-bar">
             <input class="input" id="username" type="text" size=50 placeholder="Enter Username " [(ngModel)]="username">
         </div>
-        <p style="text-indent: 450px;font-family:Verdana; font-size:14px;">Enter a password:</p>
+        <p style="text-align: center;font-family:Verdana; font-size:14px;">Password:</p>
         <div class="search-bar">
             <input class="input" id="password" size=50 type="text" placeholder="Enter Password" [(ngModel)]="password">
         </div>
-        <p style="text-indent: 450px;font-family:Verdana; font-size:14px;">Enter your e-Mail adress:</p>
+        <p style="text-align: center;font-family:Verdana; font-size:14px;">E-Mail:</p>
         <div class="search-bar">
             <input class="input" id="email" size=50 placeholder="Enter E-Mail" [(ngModel)]="email">
         </div>
     </div>
 
     <div class="search">
-        <button class="button" (click)="register(username,password,email)">sign up</button>
+        <button class="button" (click)="register(username,password,email)">Register</button>
     </div>
 </div>
 

@@ -19,6 +19,7 @@ export class UploadappartementComponent implements OnInit {
   contact: Object = undefined;
   responsetype: String;
   responsemessage: String;
+  public global = Globals;
 
 
   constructor(private appartementService: AppartementService, private router: Router) { }
@@ -50,6 +51,7 @@ export class UploadappartementComponent implements OnInit {
 
 
   ngOnInit() {
+    
   }
 
 

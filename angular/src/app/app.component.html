@@ -1,9 +1,11 @@
-<nav>
-    <a routerLink="/dashboard">Dashboard</a>
+<div class="topnav">
+    <a routerLink="/dashboard">Home</a>
     <a routerLink="/search">Search</a>
     <a *ngIf="global.authenticatedUser === undefined" routerLink="/login">Login</a>
     <a *ngIf="global.authenticatedUser === undefined" routerLink="/register">Register</a>
     <a *ngIf="global.authenticatedUser !== undefined" (click)="logout()">Logout ({{global.authenticatedUser.username}})</a>
     <a *ngIf="global.authenticatedUser !== undefined" routerLink="/upload">Upload real-estate</a>
-</nav>
+  </div>
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>

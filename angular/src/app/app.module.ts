@@ -16,6 +16,7 @@ import { MessageboxComponent } from './messagebox/messagebox/messagebox.componen
 import { LoginComponent } from './users/login/login.component';
 import { UserService } from './services/user.service';
 import { UploadappartementComponent } from './Uploadview/uploadappartement/uploadappartement.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -33,6 +34,7 @@ import { UploadappartementComponent } from './Uploadview/uploadappartement/uploa
     MessageboxComponent,
     LoginComponent,
     UploadappartementComponent,
+    FooterComponent,
     
   ],
   imports: [

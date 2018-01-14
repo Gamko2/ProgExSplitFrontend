@@ -1,12 +1,4 @@
 
-<div class="topnav">
-  <a routerLink="/dashboard">Home</a>
-  <a routerLink="/search">Search</a>
-  <a *ngIf="global.authenticatedUser === undefined" routerLink="/login">Login</a>
-  <a *ngIf="global.authenticatedUser === undefined" routerLink="/register">Register</a>
-  <a *ngIf="global.authenticatedUser !== undefined" (click)="logout()">Logout ({{global.authenticatedUser.username}})</a>
-  <a *ngIf="global.authenticatedUser !== undefined" routerLink="/upload">Upload real-estate</a>
-</div>
 
 <div class=outer-box>
   <h1 class="h1">Upload a real-estate </h1>
