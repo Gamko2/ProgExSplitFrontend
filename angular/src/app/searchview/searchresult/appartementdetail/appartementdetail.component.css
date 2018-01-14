@@ -10,8 +10,8 @@
 .h1{
     
     text-align: center;
-    color: #167AC6;
-    font-size:20px;
+    color: gold;
+    font-size:24px;
     font-weight:bold;
     font-family: Verdana;
     margin-bottom: 40px;
@@ -19,6 +19,7 @@
 
 .center{
     font-family: Verdana;
+    font-size: 12pt;
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 10px;

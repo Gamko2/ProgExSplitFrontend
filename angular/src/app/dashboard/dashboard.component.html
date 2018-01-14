@@ -1,14 +1,25 @@
-<div class="header">
-  <h1>ImmoScout 2.0 </h1>
+<div class="header">  
+  <h1>ImmoScout 2.0 </h1> 
 </div>
 
 <div class="row">
-  
-
-  <div class="column right">Welcome to ImmoScout 2.0
-
-    <p></p>
-
+<div class="column left" style="background-color:#333;">
+  <div class="topnav">
+    <ul>
+    <li><a routerLink="/dashboard" >Home</a></li>
+    <li><a routerLink="/search">Search</a></li>
+    <li><a *ngIf="global.authenticatedUser === undefined" routerLink="/login">Login</a></li>
+    <li><a *ngIf="global.authenticatedUser === undefined" routerLink="/register">Register</a></li>
+    <li><a *ngIf="global.authenticatedUser !== undefined" (click)="logout()">Logout ({{global.authenticatedUser.username}})</a></li>
+    <li><a *ngIf="global.authenticatedUser !== undefined" routerLink="/upload">Upload real-estate</a></li>
+  </ul>
   </div>
 </div>
 
+<div class="column right">Welcome to ImmoScout 2.0   
+       
+  <p></p>
+                              
+  </div>   
+</div>
+                     

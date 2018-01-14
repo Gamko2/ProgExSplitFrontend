@@ -4,13 +4,15 @@ background-color: white;
 }
 
 .h1 {
-    color: #167AC6; 
+    color: gold; 
     font-size:22pt;  
     font-family:Verdana;
     text-align: center;
   }
 
   .center{
+      font-family: Verdana;
+      font-size:12pt;
       margin-left: 10px;
       margin-right: 10px;
   }
