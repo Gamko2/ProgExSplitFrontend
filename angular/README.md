@@ -1,5 +1,11 @@
 # Angular
 
+## First time Start
+You need to run "npm install" in the folder of this project to install 
+all dependencies needed. Afterwards you need to install the current version
+of Angular. This is done via "npm install -g @angular/cli".
+Afterwards see ##Development server.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
 
 ## Development server
